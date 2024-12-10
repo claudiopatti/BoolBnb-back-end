@@ -1,0 +1,78 @@
+@import "~bootstrap/scss/bootstrap";
+
+// main {
+//     background-color: lightcoral;
+// }
+
+.my-card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    box-shadow: 5px 5px 10px 3px lightgray;
+    &:hover{
+        box-shadow: 5px 5px 10px 12px lightgray;
+
+    }
+
+}
+
+.form-card{
+    box-shadow: 2px 2px 10px 3px lightgray;
+    &:hover{
+        box-shadow: 2px 2px 10px 12px lightgray;
+
+    }
+}
+.my-img-container{
+    height: 350px;
+}
+.my-img {
+    width: 100%; /* L'immagine occupa tutta la larghezza */
+    height: 100%; /* L'immagine occupa tutta l'altezza del carosello */
+    object-fit: cover; /* Riempi il contenitore mantenendo le proporzioni */
+    object-position: center; /* Centra l'immagine */
+
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    // height: 100%;
+
+    .badge {
+        padding: 5px 10px;
+        margin-bottom: 4px;
+    }
+    
+}
+
+.my-services {
+    text-transform: capitalize;
+}
+
+.list-group-item-action:hover {
+    background-color: #f8f9fa;
+    cursor: pointer;
+}
+
+.message-card {
+    border: 1px solid black;
+    &:hover {
+        cursor: pointer;
+    }
+}
+.message-link {
+    text-decoration: none;
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+// .my-list {
+//     max-height: 75px;
+// }
+
+.hour-sponsorship {
+    height: 50px;
+    min-height: 50px;
+}
