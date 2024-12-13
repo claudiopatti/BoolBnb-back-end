@@ -7,6 +7,8 @@ use App\Http\Controllers\Admin\MainController as AdminMainController;
 use App\Http\Controllers\Admin\ApartmentController as AdminApartmentController;
 use App\Http\Controllers\Admin\MessageController;
 use App\Http\Controllers\Admin\SponsorshipController as AdminSponsorshipController;
+use App\Http\Controllers\Auth\AuthenticatedSessionController;
+
 
 
 use App\Http\Controllers\Admin\ServiceController;
@@ -29,7 +31,7 @@ use App\Http\Controllers\ApartmentController;
 |
 */
 
-Route::get('/', [AdminMainController::class, 'showDashboard'])->name('home');
+Route::get('/', [AuthenticatedSessionController::class, 'create'])->name('home');
 
 Route::prefix('admin')
     ->name('admin.')
