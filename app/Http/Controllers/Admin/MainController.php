@@ -22,13 +22,13 @@ class MainController extends Controller
     public function showDashboard()
     {
         $user = auth()->user();
-
-        $apartments = Apartment::where('user_id', $user->id)->get();
-
+        
         // Ensure the user is authenticated
         if (!$user) {
             return redirect()->route('login');
         }
+        $apartments = Apartment::where('user_id', $user->id)->get();
+
 
         // Query to fetch message counts for only the authenticated user's apartments
         $messageCounts = DB::table('messages')

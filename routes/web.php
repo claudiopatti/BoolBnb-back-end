@@ -31,7 +31,7 @@ use App\Http\Controllers\ApartmentController;
 |
 */
 
-Route::get('/', [AuthenticatedSessionController::class, 'create'])->name('home');
+Route::get('/', [AdminMainController::class, 'showDashboard'])->name('home');
 
 Route::prefix('admin')
     ->name('admin.')
