@@ -107,12 +107,12 @@
                                 </div>
                                 <div class="col-12 col-md-3">
                                     <div class="w-100 mb-2">
-                                        <a href="{{ route('admin.apartments.edit', ['apartment' => $apartment->id ]) }}" class="btn btn-outline-primary w-100 me-2">Modifica</a>
+                                        <a href="{{ route('admin.apartments.edit', ['apartment' => $apartment->id ]) }}" class="btn btn-outline-primary w-100 me-2 ps-2">Modifica</a>
                                     </div>
                                 </div>
                                 <div class="col-12 col-md-3">
                                     <div class="w-100 mb-2">
-                                        <a href="{{ route('admin.apartments.messages', ['apartment' => $apartment->id ]) }}"  class="btn btn-outline-primary w-100 me-2">Messaggi</a>
+                                        <a href="{{ route('admin.apartments.messages', ['apartment' => $apartment->id ]) }}"  class="btn btn-outline-primary w-100 me-2 ps-1">Messaggi</a>
                                     </div>
                                 </div>
                                 <div class="col-12 col-md-3 ms-auto">
